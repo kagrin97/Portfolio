@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Image, Button } from 'react-bootstrap';
-import { FaBlog, FaGithub } from 'react-icons/fa';
+
+import { info } from '../data/info';
 
 import './Profile.css';
 
@@ -11,17 +12,23 @@ function Profile() {
         <Image src="/imgs/아바타.jpg" className="Image" />
       </Card.Header>
       <Card.Body className="">
-        <Card.Title className="mt-1">강민규</Card.Title>
-        <Card.Text className="my-2">
-          저는 React와 Next.js를 좋아하는 프론트엔드 개발자입니다.
-        </Card.Text>
-        <Card.Text className="">kagrin97@gmail.com</Card.Text>
-        <Button variant="primary" href="https://myblog.com">
-          <FaBlog /> Visit my blog
-        </Button>
-        <Button variant="secondary" target="_blank" href="https://github.com/kagrin97">
-          <FaGithub /> View my GitHub
-        </Button>
+        <Card.Title className="mt-2">{info.name}</Card.Title>
+        <Card.Text className="my-2">{info.bio}</Card.Text>
+        {info.miniBio.map((bio: any, index: number) => {
+          return (
+            <Card.Text key={index}>
+              <i className={bio.icon} aria-hidden="true" /> {bio.text}
+            </Card.Text>
+          );
+        })}
+
+        {info.socials.map((social: any, index: number) => {
+          return (
+            <Button key={index} href={social.link} target="_blank">
+              <i className={social.icon} aria-hidden="true" /> {social.label}
+            </Button>
+          );
+        })}
       </Card.Body>
     </Card>
   );
