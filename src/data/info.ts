@@ -1,4 +1,19 @@
-export const info = {
+export interface Info {
+  name: string;
+  bio: string;
+  miniBio: { icon: string; text: string }[];
+  socials: { link: string; icon: string; label: string }[];
+  skills: {
+    languages: [string, string][];
+    frameworks: [string, string][];
+    databases: [string, string][];
+    cloud: [string, string][];
+    tools: [string, string][];
+  };
+  portfolio: any[];
+}
+
+export const info: Info = {
   name: '강민규',
   bio: '저는 React와 Next.js를 좋아하는 프론트엔드 개발자입니다.',
   miniBio: [
@@ -45,7 +60,7 @@ export const info = {
       ['Material UI', '하'],
     ],
     databases: [['MongoDB', '최하']],
-    cloudServices: [
+    cloud: [
       ['AWS EC2', '최하'],
       ['Vercel', '하'],
       ['Cloudinary', '하'],
