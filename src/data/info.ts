@@ -1,16 +1,13 @@
+type SkillCategory = {
+  [key: string]: [string, string][];
+};
+
 export interface Info {
   name: string;
   bio: string;
   miniBio: { icon: string; text: string }[];
   socials: { link: string; icon: string; label: string }[];
-  skills: {
-    languages: [string, string][];
-    frameworks: [string, string][];
-    databases: [string, string][];
-    cloud: [string, string][];
-    tools: [string, string][];
-  };
-  portfolio: any[];
+  skills: SkillCategory;
 }
 
 export const info: Info = {
@@ -73,5 +70,5 @@ export const info: Info = {
       ['yarn', '최하'],
     ],
   },
-  portfolio: [],
+  // portfolio: [],
 };

@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 
 import './Skills.css';
 
-import { info, Info } from '../data/info';
+import { info } from '../data/info';
 
 const tableTheme = [
   'table-active',
@@ -31,12 +31,12 @@ function Skills() {
           <tr key={category} className={tableTheme[index]}>
             <th scope="row">{category}</th>
             <td>
-              {info.skills[category].map((items: any) => (
+              {info.skills[category].map((items: string[]) => (
                 <p>{items[0]}</p>
               ))}
             </td>
             <td>
-              {info.skills[category].map((items: any) => (
+              {info.skills[category].map((items: string[]) => (
                 <p>{items[1]}</p>
               ))}
             </td>
