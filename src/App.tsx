@@ -1,9 +1,29 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const App = () => (
-  <div>
-    <h1>PortFoilo</h1>
-  </div>
-);
+import './App.css';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+
+import HeaderNav from './components/HeaderNav';
+
+function App() {
+  const routes = (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+    </Routes>
+  );
+
+  return (
+    <Router>
+      <HeaderNav />
+      <main>{routes}</main>
+    </Router>
+  );
+}
 
 export default App;

@@ -1,0 +1,9 @@
+.Navbar-Brand:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
+
+.Nav-Link:hover {
+  background-color: yellow !important;
+  color: black !important;
+}
