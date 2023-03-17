@@ -1,12 +1,14 @@
 import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+
+import Profile from '../components/Profile';
 
 function Home() {
   return (
     <React.Fragment>
       <Container className="mt-5">
-        <h1>Welcome to 강민규</h1>
-        <p>This is a retro Bootstrap theme for the 80s lovers.</p>
+        <h1>WELCOME!! FRONTEND_DEVELOPER_KMG_2.7</h1>
+        <Profile />
       </Container>
     </React.Fragment>
   );

@@ -6,6 +6,22 @@
   font-style: normal;
 }
 
+body {
+  visibility: hidden !important;
+}
+
 main {
   font-family: DOSMyungjo;
+  visibility: visible !important;
+  margin: 0 1rem;
+}
+
+#wrap386 {
+  visibility: visible !important;
+  background-color: var(--blue) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
 }

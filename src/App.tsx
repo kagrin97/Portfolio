@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home';
-import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 
 import HeaderNav from './components/HeaderNav';
@@ -13,7 +12,6 @@ function App() {
   const routes = (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
     </Routes>
   );
