@@ -41,13 +41,13 @@ export const info: Info = {
     },
   ],
   skills: {
-    languages: [
+    Languages: [
       ['TypeScript', '하'],
       ['JavaScript', '하'],
       ['HTML/CSS', '하'],
       ['Python', '하'],
     ],
-    frameworks: [
+    Frameworks: [
       ['React', '하'],
       ['Next.js', '하'],
       ['Redux', '하'],
@@ -56,13 +56,13 @@ export const info: Info = {
       ['Tailwind CSS', '하'],
       ['Material UI', '하'],
     ],
-    databases: [['MongoDB', '최하']],
-    cloud: [
+    Databases: [['MongoDB', '최하']],
+    Cloud: [
       ['AWS EC2', '최하'],
       ['Vercel', '하'],
       ['Cloudinary', '하'],
     ],
-    tools: [
+    Tools: [
       ['Git', '하'],
       ['GitHub', '하'],
       ['Postman', '최하'],

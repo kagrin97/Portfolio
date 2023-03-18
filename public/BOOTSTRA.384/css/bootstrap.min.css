@@ -6259,7 +6259,7 @@ body.bootstra-enable-cursor {
   cursor: none !important;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0;
   background: #000;
 }
 ::-webkit-scrollbar-thumb {

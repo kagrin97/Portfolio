@@ -21,9 +21,9 @@ function Skills() {
     <Table responsive striped bordered hover variant="primary" className="mt-5 table table-hover">
       <thead>
         <tr className="">
-          <th scope="col">Skill</th>
+          <th scope="col">Category</th>
           <th scope="col">Name</th>
-          <th scope="col">Step</th>
+          <th scope="col">Level</th>
         </tr>
       </thead>
       <tbody>
@@ -31,13 +31,13 @@ function Skills() {
           <tr key={category} className={tableTheme[index]}>
             <th scope="row">{category}</th>
             <td>
-              {info.skills[category].map((items: string[]) => (
-                <p>{items[0]}</p>
+              {info.skills[category].map((skillInfo: string[], itemIndex: number) => (
+                <p key={itemIndex}>{skillInfo[0]}</p>
               ))}
             </td>
             <td>
-              {info.skills[category].map((items: string[]) => (
-                <p>{items[1]}</p>
+              {info.skills[category].map((skillInfo: string[], itemIndex: number) => (
+                <p key={itemIndex}>{skillInfo[1]}</p>
               ))}
             </td>
           </tr>
