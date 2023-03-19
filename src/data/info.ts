@@ -8,6 +8,14 @@ export interface Info {
   miniBio: { icon: string; text: string }[];
   socials: { link: string; icon: string; label: string }[];
   skills: SkillCategory;
+  portfolio: {
+    title: string;
+    live: string | null;
+    gitHub: string;
+    image: string;
+    stack: string[];
+    data: { start: string; end: string };
+  }[];
 }
 
 export const info: Info = {
@@ -70,5 +78,39 @@ export const info: Info = {
       ['yarn', '최하'],
     ],
   },
-  // portfolio: [],
+  portfolio: [
+    {
+      title: 'NextJS-myblog : NextJS를 사용해서 실제 운영중인 블로그',
+      live: 'https://kagrin97-blog.vercel.app/',
+      gitHub: 'https://github.com/kagrin97/NextJS-myblog',
+      image: '/imgs/아바타.jpg',
+      stack: ['NextJS', 'contentlayer', 'tailwind', 'vercel', 'PWA'],
+      data: {
+        start: '2022-06-30',
+        end: '~',
+      },
+    },
+    {
+      title: 'My Calendar : 자신만의 캘린더를 가지고 해당 날짜에 메모 할수있는 어플리케이션',
+      live: 'https://my-calendar-mern.vercel.app/',
+      gitHub: 'https://github.com/kagrin97/MyCalendar-MERN',
+      image: '/imgs/아바타.jpg',
+      stack: ['React', 'Express', 'monggodb', 'atlas', 'AWS', 'EC2', 'Cloudinary', 'Vercel', 'PWA'],
+      data: {
+        start: '2023-01-30',
+        end: '2023-02-28',
+      },
+    },
+    {
+      title: '주식투자 BackOffice : 원티드 프론트엔드 교육과정에서 협업해 만든 관리자 페이지',
+      live: null,
+      gitHub: 'https://github.com/wanted-fe-6/pre-onboarding-assignment-week-4-1-team-1',
+      image: '/imgs/아바타.jpg',
+      stack: ['React', 'mui', 'emotion', 'eslint', 'prettier', 'husky'],
+      data: {
+        start: '2022-09-16',
+        end: '2022-09-15',
+      },
+    },
+  ],
 };

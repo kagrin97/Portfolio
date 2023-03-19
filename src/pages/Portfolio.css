@@ -1,0 +1,9 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  width: 33.33%;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
