@@ -2,11 +2,6 @@
   visibility: visible !important;
 }
 
-.navbar-brand:hover {
-  background-color: yellow !important;
-  color: black !important;
-}
-
 .nav-link:hover {
   background-color: yellow !important;
   color: black !important;

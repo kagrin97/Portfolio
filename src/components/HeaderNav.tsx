@@ -7,7 +7,6 @@ function HeaderNav() {
   return (
     <Navbar bg="dark" variant="dark">
       <Container className="py-2">
-        <Navbar.Brand href="/">MINGYU_KANG</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/portfolio">Portfolio</Nav.Link>

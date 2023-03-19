@@ -9,7 +9,7 @@ function Profile() {
   return (
     <Card className="mt-5">
       <Card.Header>
-        <Image src="/imgs/아바타.jpg" className="Image" />
+        <Image src="/imgs/아바타.jpg" width="80px" height="80px" className="Image" />
       </Card.Header>
       <Card.Body className="">
         <Card.Title className="mt-2">{info.name}</Card.Title>
