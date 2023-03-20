@@ -1,9 +1,27 @@
 .parent {
   display: flex;
-  flex-wrap: wrap;
 }
 .child {
   width: 33.33%;
   box-sizing: border-box;
-  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+.jumbotron h3 {
+  width: 90%;
+}
+
+.jumbotron > * {
+  margin: 1.5rem 1rem;
+}
+
+@media (max-width: 650px) {
+  .parent {
+    flex-direction: column;
+  }
+
+  .child {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }

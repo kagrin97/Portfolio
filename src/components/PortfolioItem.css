@@ -1,0 +1,7 @@
+a {
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--yellow);
+}
