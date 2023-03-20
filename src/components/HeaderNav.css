@@ -6,3 +6,7 @@
   background-color: yellow !important;
   color: black !important;
 }
+
+.active-url {
+  color: var(--yellow) !important;
+}
