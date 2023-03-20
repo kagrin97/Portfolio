@@ -100,7 +100,7 @@ export const info: Info = {
       live: 'https://my-calendar-mern.vercel.app/',
       gitHub: 'https://github.com/kagrin97/MyCalendar-MERN',
       image: '/imgs/캘린더 화면.png',
-      stack: ['React', 'Express', 'monggodb', 'atlas', 'AWS', 'EC2', 'Cloudinary', 'Vercel', 'PWA'],
+      stack: ['React', 'Express', 'Monggodb', 'AWS', 'EC2', 'Cloudinary', 'Vercel', 'PWA'],
       data: {
         start: '2023-01-30',
         end: '2023-02-28',

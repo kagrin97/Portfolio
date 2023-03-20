@@ -1,0 +1,9 @@
+.home-body {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .home-body {
+    flex-direction: column;
+  }
+}

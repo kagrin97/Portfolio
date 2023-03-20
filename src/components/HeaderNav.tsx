@@ -7,7 +7,7 @@ import './HeaderNav.css';
 
 function HeaderNav() {
   const path = useLocation().pathname;
-  console.info(path);
+
   return (
     <Navbar bg="dark" variant="dark">
       <Container className="py-2">

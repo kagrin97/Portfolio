@@ -2,6 +2,18 @@
   flex-direction: row !important;
 }
 
+@media (min-width: 1000px) {
+  .card {
+    flex-direction: column !important;
+    margin-right: 1rem;
+    height: max-content;
+  }
+
+  .card-header {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 550px) {
   .card {
     flex-direction: column !important;
