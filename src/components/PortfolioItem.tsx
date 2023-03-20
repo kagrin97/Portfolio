@@ -32,7 +32,10 @@ function PortfolioItem({ portfolio }: Props) {
         <p>
           {portfolio.data.start} | {portfolio.data.end}
         </p>
-        <div className="list-group-item list-group-item-action flex-column align-items-start active">
+        <div
+          style={{ zIndex: 0 }}
+          className="list-group-item list-group-item-action flex-column align-items-start active"
+        >
           <h5 className="ml-5">STACKS</h5>
           {portfolio.stack.map((stack, index) => (
             <p key={index} className="mb-1">
