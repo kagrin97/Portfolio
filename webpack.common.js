@@ -84,6 +84,7 @@ module.exports = {
         { from: 'public/BOOTSTRA.384/fonts', to: 'BOOTSTRA.384/fonts/[name][ext]' },
         { from: 'public/imgs', to: 'imgs' },
         { from: 'public/resume', to: 'resume' },
+        { from: 'public/favicon.ico', to: '[name][ext]' },
       ],
     }),
     new BundleAnalyzerPlugin({
