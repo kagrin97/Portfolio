@@ -81,7 +81,6 @@ module.exports = {
       patterns: [
         { from: 'public/BOOTSTRA.384/js', to: 'BOOTSTRA.384/js/[name][ext]' },
         { from: 'public/BOOTSTRA.384/css', to: 'BOOTSTRA.384/css/[name][ext]' },
-        { from: 'public/BOOTSTRA.384/fonts', to: 'BOOTSTRA.384/fonts/[name][ext]' },
         { from: 'public/imgs', to: 'imgs' },
         { from: 'public/resume', to: 'resume' },
         { from: 'public/favicon.ico', to: '[name][ext]' },
